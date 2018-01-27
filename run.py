@@ -15,9 +15,9 @@ dicTestSettings = {'KO': '{!s}/test_KO.tsv'.format(strBaseDir),
 # 1) Train
 model = grrnnLib.createModel(dicTrainSettings['Graph'])
 dataTrain = grrnnLib.loadData(dicTrainSettings)
-model.train(dataTrain.input, dataTrain.target)
+#model.train(dataTrain.input, dataTrain.target)
 
 # 2) Test
-dataTest = grrnnLib.loadData(dicTestSettings)
-predNonTFsTest = model.predict(dataTest.input, dataTest.target)
-grrnnLib.save(predNonTFsTest)
+#dataTest = grrnnLib.loadData(dicTestSettings)
+#predNonTFsTest = model.predict(dataTest.input, dataTest.target)
+#grrnnLib.save(predNonTFsTest)
